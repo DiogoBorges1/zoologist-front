@@ -29,7 +29,7 @@ body_mass_g = st.number_input(
 sex = st.selectbox("Sex", ["Male", "Female"])
 
 # API URL
-url = "http://127.0.0.1:8000/predict"
+url = f"{st.secrets['API_URL']}/predict"
 
 # API parameters
 params = {
